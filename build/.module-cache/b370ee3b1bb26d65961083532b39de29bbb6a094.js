@@ -1,7 +1,9 @@
 var Logo = React.createClass({displayName: "Logo",	
 	render: function () {
 		return (
-			React.createElement("h1", {id: "logo"}, React.createElement("a", {href: "index.html"}, this.props.companyName))
+			React.createElement("h1", {id: "logo"}, 
+				React.createElement("a", {href: "index.html"}, this.companyName)
+			)
 		);
 	}
 });
